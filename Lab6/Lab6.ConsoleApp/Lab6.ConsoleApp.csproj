@@ -42,18 +42,19 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Abstracts\Phone.cs" />
+    <Compile Include="Abstracts\PhoneExtented.cs" />
+    <Compile Include="Common\Common.cs" />
+    <Compile Include="Intefaces\IPhoneFunctionality.cs" />
+    <Compile Include="Phones\Apple.cs" />
+    <Compile Include="Phones\Blackberry.cs" />
+    <Compile Include="Phones\Samsung.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Collections\" />
-    <Folder Include="Delegates\" />
-    <Folder Include="Events\" />
-    <Folder Include="Generics\" />
-    <Folder Include="LambdaExpressions\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
