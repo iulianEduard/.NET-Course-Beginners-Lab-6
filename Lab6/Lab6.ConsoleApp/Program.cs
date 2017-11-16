@@ -15,6 +15,9 @@ namespace Lab6.ConsoleApp
     {
         static void Main(string[] args)
         {
+            InterfaceExample1();
+
+            Console.ReadKey();
         }
 
         #region Exceptions
@@ -34,6 +37,7 @@ namespace Lab6.ConsoleApp
             Console.WriteLine("Insert number: ");
             string input = Console.ReadLine();
             int number = 0;
+
             try
             {
                 number = Convert.ToInt32(input);
@@ -41,11 +45,11 @@ namespace Lab6.ConsoleApp
             catch (Exception ex)
             {
                 string errorMessage = "";
-                errorMessage += ex.Message + Environment.NewLine;
-                errorMessage += ex.Source + Environment.NewLine;
-                errorMessage += ex.StackTrace + Environment.NewLine;
-                errorMessage += ex.TargetSite + Environment.NewLine;
-                Console.WriteLine($"Error message: {errorMessage}");
+                Console.WriteLine($"Error message: {ex.Message}");
+            }
+            finally
+            {
+                string finalMessage = string.Empty;
             }
 
             Console.WriteLine($"Number raised at the power 2: {Math.Pow(number, 2)}");

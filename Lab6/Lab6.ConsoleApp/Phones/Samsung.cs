@@ -17,7 +17,7 @@ namespace Lab5.ConsoleApp.Phones
 
         public void Restart()
         {
-            if(!IsTurnedOn)
+            if (!IsTurnedOn)
             {
                 throw new Exception("Cannot restart phone because its turned off!");
             }
@@ -98,6 +98,24 @@ namespace Lab5.ConsoleApp.Phones
             {
                 throw new Exception("Please provide the height for rezolution!");
             }
+        }
+    }
+
+    public class Huawei : IPhoneFunctionality
+    {
+        public void Restart()
+        {
+            throw new NotImplementedException();
+        }
+
+        public void TurnOff()
+        {
+            throw new NotImplementedException();
+        }
+
+        public void TurnOn()
+        {
+            throw new NotImplementedException();
         }
     }
 }
