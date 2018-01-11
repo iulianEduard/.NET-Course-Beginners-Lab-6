@@ -15,7 +15,7 @@ namespace Lab6.ConsoleApp
     {
         static void Main(string[] args)
         {
-            InterfaceExample1();
+            ExceptionNotTreated();
 
             Console.ReadKey();
         }
@@ -44,7 +44,6 @@ namespace Lab6.ConsoleApp
             }
             catch (Exception ex)
             {
-                string errorMessage = "";
                 Console.WriteLine($"Error message: {ex.Message}");
             }
             finally
